@@ -1,0 +1,30 @@
+:root {
+  /* Universal*/
+  --clr-site-bg: #222224;
+  --clr-nav-bg: #353538;
+  --clr-button-bg: #505050;
+
+  --clr-light: #fafafa;
+  --clr-accent: rgb(114, 255, 86);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--clr-site-bg);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.split {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-family: 800;
+}
