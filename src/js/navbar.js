@@ -1,13 +1,3 @@
-function copyText(text) {
-    const temp = document.createElement('textarea');
-    temp.innerHTML = text;
-    document.body.appendChild(temp);
-    temp.select();
-    temp.setSelectionRange(0, 99999);
-    document.execCommand('copy');
-    document.body.removeChild(temp)
-}
-
 function addNavbarListItem(list, href, html) {
     const listItem = document.createElement('li')
     const link = document.createElement('a')
@@ -17,19 +7,6 @@ function addNavbarListItem(list, href, html) {
     list.appendChild(listItem)
 }
 
-function addLoadEvent(func) {
-    const oldOnLoad = window.onload
-    if (typeof window.onload != 'function') {
-        window.onload = func
-    } else {
-        window.onload = function () {
-            if (oldOnLoad) {
-                oldOnLoad(undefined)
-            }
-            func()
-        }
-    }
-}
 
 addLoadEvent(function () {
     let navbar = document.getElementsByTagName('nav');

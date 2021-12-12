@@ -17,6 +17,15 @@ body {
 .center {
   display: flex;
   justify-content: center;
+
+}
+
+.center-vertical {
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
 .split {
@@ -27,4 +36,8 @@ body {
 h1 {
   font-family: Montserrat, sans-serif;
   font-family: 800;
+}
+
+.spacer {
+  height: 2rem;
 }
