@@ -31,10 +31,18 @@ h3 {
     :root {
         color: #213547;
         background-color: #ffffff;
+        --clr-primary: #00796B;
+        --clr-on-primary: #ffffff;
     }
+
+    .logo{
+        content:url("/images/logo_light.webp");
+    }
+
     a:hover {
         color: #747bff;
     }
+
     button {
         background-color: #f9f9f9;
     }

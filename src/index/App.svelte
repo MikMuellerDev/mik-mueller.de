@@ -89,7 +89,7 @@
     </a>
     </q>.
 
-    Right now, I am writing a virtual machine + compiler to replace the tree-walking interpreter.
+    Right now, I am writing a virtual machine and a compiler to replace the tree-walking interpreter.
     A current challenge is testing of the compiler and virtual machine toolchain. Therefore, I am experimenting with semantic-based fuzzing of the language.
 
     <div class="spacer" />
