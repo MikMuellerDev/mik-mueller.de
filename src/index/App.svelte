@@ -58,11 +58,11 @@
         <div class="about-container__rhs">
             <div class="about-container__rhs__element">
                 <h4>About</h4>
-                Hi there I'm Mik, a&nbsp;<b>{age} year-old</b> German highschool-graduate. My
+                Hi there! I'm Mik, a&nbsp;<b>{age} year-old</b> German student at <a href="https://hpi.de">Hasso Plattner Institute</a>. My
                 interests are programming, servers and other engineering-related topics. My
                 strengths are
                 <b>Rust</b>
-                and <b>Go</b> since my current focus is backend and low-level systems.
+                and <b>Go</b> since I'm currently focussing on backend and low-level systems.
             </div>
             <div class="about-container__rhs__element">
                 <h4>Links</h4>
@@ -80,6 +80,17 @@
     <div class="spacer" />
 
     <h2>Projects</h2>
+
+    I am currently working on
+
+    <q>
+    <a href="https://github.com/smarthome-go/homescript">
+        Homescript
+    </a>
+    </q>.
+
+    Right now, I am writing a virtual machine + compiler to replace the tree-walking interpreter.
+    A current challenge is testing of the compiler and virtual machine toolchain. Therefore, I am experimenting with semantic-based fuzzing of the language.
 
     <div class="spacer" />
 
