@@ -96,7 +96,9 @@
 
     <div class="projects">
         <div class="projects__project">
+            <a href="https://rush-lang.de">
             <h3>The <q>rush</q> Programming Language</h3>
+            </a>
             <div class="projects__project__split">
                 <div class="projects__project__split__left">
                     A voluntary 12th grade research project dealing with the design and
@@ -142,7 +144,9 @@
             <div class="spacer" />
 
             <div class="projects__project">
+            <a href="https://github.com/smarthome-go">
                 <h3>The <q>Smarthome</q> Organization</h3>
+            </a>
 
                 <div class="projects__project__split">
                     <div class="projects__project__split__left">
@@ -182,7 +186,9 @@
             <div class="spacer" />
 
             <div class="projects__project">
+            <a href="https://github.com/smarthome-go/homescript">
                 <h3>The <q>Homescript</q> Programming Language</h3>
+            </a>
 
                 <div class="projects__project__split">
                     <div class="projects__project__split__left">
@@ -225,7 +231,9 @@
             <div class="spacer" />
 
             <div class="projects__project">
+                <a href="https://github.com/MikMuellerDev/radio">
                 <h3>Radio</h3>
+                </a>
 
                 <div class="projects__project__split">
                     <div class="projects__project__split__left">
@@ -257,7 +265,9 @@
             <div class="spacer" />
 
             <div class="projects__project">
+            <a href="https://github.com/MikMuellerDev/quickclip">
                 <h3>QuickClip</h3>
+            </a>
                 <div class="projects__project__split">
                     <div class="projects__project__split__left">
                         A self-hosted, simple alternative to PasteBin. QuickClip supports multiple
