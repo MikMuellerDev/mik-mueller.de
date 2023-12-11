@@ -67,9 +67,9 @@
     async function runGreetingTerminal(withInitialError: boolean) {
         if (withInitialError) {
             setTerminal('/xb0', '')
-            await printTerminal(' bash /404.sh\n', 'white', 6)
+            await printTerminal(' ./404\n', 'white', 6)
             await sleep(400)
-            setTerminal('bash: /404.sh: No such file or directory<br>', 'red')
+            setTerminal('[1]    356526 segmentation fault (core dumped)  ./404<br>', 'red')
             setTerminal('/xb1', '')
             setTerminal(' [130]', 'red')
             setTerminal('> ', 'white')
@@ -79,18 +79,36 @@
             await printTerminal('clear\n', 'white', 5)
             await sleep(100)
             await clearTerminal()
+
+            // setTerminal('/xb0', '')
+            // await printTerminal(' bash /404.sh\n', 'white', 6)
+            // await sleep(400)
+            // setTerminal('bash: /404.sh: No such file or directory<br>', 'red')
+            // setTerminal('/xb1', '')
+            // setTerminal(' [130]', 'red')
+            // setTerminal('> ', 'white')
+            // await printTerminal('# Oh no, i messed that up.\n', 'gray', 10)
+            // await sleep(700)
+            // setTerminal('/xb0', 'white')
+            // await printTerminal('clear\n', 'white', 5)
+            // await sleep(100)
+            // await clearTerminal()
         }
 
         setTerminal('/xb0', 'white')
         await printTerminal('bash ./404.sh\n', 'white', 5)
 
-        await setTerminal('<span style="font-size: 2.5rem;">404</span><br/>', 'red')
+        await setTerminal('<span>404</span><br/>', 'red')
+        await setTerminal('<span>404</span><br/>', 'red')
+        await setTerminal('<span>404</span><br/>', 'red')
+        await setTerminal('<span>404</span><br/>', 'red')
+
         await sleep(500)
         await setTerminal('\nThis page does not exist.', 'white')
         await sleep(500)
         await setTerminal('<br>-------------------------', 'white')
         await sleep(1000)
-        await setTerminal('<br>Try going <a href="/">back</a>.', 'white')
+        await setTerminal('<br>Try going <a style="color: #88ff70" href="/">back</a>.', 'white')
         setTerminal('<br>/xb0', 'white')
     }
 </script>
