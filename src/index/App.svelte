@@ -29,7 +29,7 @@
         console.log(`Scale factor: ${SCALE_FACTOR} | first zero: ${FIRST_ZERO_X}`)
         let modifier = FIRST_ZERO_X
 
-        for (let a = 0; a < years + 1; a++) {
+        for (let a = 0; a < years + 2; a++) {
             age = a.toString().padStart(2, '0')
             console.log(
                 `Sleep: ${Math.round(
@@ -44,6 +44,9 @@
     onMount(() => {
         displayAge()
     })
+
+    const mailB64 = "bWlrLm11ZWxsZXJAc3R1ZGVudC5ocGkudW5pLXBvdHNkYW0uZGU="
+    let showMail = false
 </script>
 
 <main>
@@ -65,12 +68,24 @@
                 and <b>Go</b> since I'm currently focussing on backend and low-level systems.
             </div>
             <div class="about-container__rhs__element">
-                <h4>Links</h4>
+                <h4 id="links">Links & Contact</h4>
                 <ul>
                     <li><a href="https://github.com/MikMuellerDev" target="_blank">GitHub</a></li>
                     <li>
                         <a href="https://www.linkedin.com/in/mik-m%C3%BCller-16457523a/" target="_blank">LinkedIn</a
                         >
+                    </li>
+                    <li>
+                        {#if !showMail}
+                            <a href="#mail" on:click={() => showMail = true}>Mail</a>
+                            (click to show)
+                        {:else}
+                            <a href={`mailto:${atob(mailB64)}`}>
+                                <code id="links">
+                                    {atob(mailB64)}
+                                </code>
+                            </a>
+                        {/if}
                     </li>
                 </ul>
             </div>
