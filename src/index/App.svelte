@@ -29,7 +29,7 @@
         console.log(`Scale factor: ${SCALE_FACTOR} | first zero: ${FIRST_ZERO_X}`)
         let modifier = FIRST_ZERO_X
 
-        for (let a = 0; a < years + 2; a++) {
+        for (let a = 0; a < years + 1; a++) {
             age = a.toString().padStart(2, '0')
             console.log(
                 `Sleep: ${Math.round(
@@ -51,7 +51,6 @@
 
 <main>
     <!-- <Terminal /> -->
-
     <img alt="Mik Müller" class="logo" src="/images/logo.webp" />
 
     <div class="about-container">
