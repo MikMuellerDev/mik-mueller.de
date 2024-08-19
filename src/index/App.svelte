@@ -61,32 +61,49 @@
             <div class="about-container__rhs__element">
                 <h4>About</h4>
                 Hi there! I'm Mik, a&nbsp;<b>{age} year-old</b> German student at <a href="https://hpi.de">Hasso Plattner Institute</a>. My
-                interests are programming, servers and other engineering-related topics. My
-                strengths are
+                interests are programming, servers and other engineering-related topics. When I'm not productive, you can catch me listening to electronic music or enjoying student life with my awesome friends.
+                My strengths are
                 <b>Rust</b>
                 and <b>Go</b> since I'm currently focussing on backend and low-level systems.
             </div>
-            <div class="about-container__rhs__element">
-                <h4 id="links">Links & Contact</h4>
-                <ul>
-                    <li><a href="https://github.com/MikMuellerDev" target="_blank">GitHub</a></li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/mik-m%C3%BCller-16457523a/" target="_blank">LinkedIn</a
-                        >
-                    </li>
-                    <li>
-                        {#if !showMail}
-                            <a href="#mail" on:click={() => showMail = true}>Mail</a>
-                            (click to show)
-                        {:else}
-                            <a href={`mailto:${atob(mailB64)}`}>
-                                <code id="links">
-                                    {atob(mailB64)}
-                                </code>
-                            </a>
-                        {/if}
-                    </li>
-                </ul>
+            <div class="about-container__rhs__element hsplit">
+                <div>
+                    <h4 id="links">Links & Contact</h4>
+                    <ul>
+                        <li><a href="https://github.com/MikMuellerDev" target="_blank">GitHub</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mik-m%C3%BCller-16457523a/" target="_blank">LinkedIn</a
+                            >
+                        </li>
+                        <li>
+                            {#if !showMail}
+                                <a href="#mail" on:click={() => showMail = true}>Mail</a>
+                                (click to show)
+                            {:else}
+                                <a href={`mailto:${atob(mailB64)}`}>
+                                    <code id="links">
+                                        {atob(mailB64)}
+                                    </code>
+                                </a>
+                            {/if}
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 id="links">Education</h4>
+
+                    <div id="education">
+                        <img src="/images/hpi.png" alt="" />
+                        <div>
+                            <a href="https://hpi.de" target="_blank">Hasso Plattner Institute</a>
+                            <ul>
+                                <li>Bachelor Sc. <q>IT-Systems-Engineering</q> (2023-2027)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -95,16 +112,36 @@
 
     <h2>Projects</h2>
 
-    I am currently working on
+    <ul class='projects__project__split__left'>
+        <li>
+            I am currently working on
 
-    <q>
-    <a href="https://github.com/smarthome-go/homescript">
-        Homescript
-    </a>
-    </q>.
+            <q>
+            <a href="https://github.com/smarthome-go/homescript">
+                Homescript
+            </a>
+            </q>.
 
-    Right now, I am writing a virtual machine and a compiler to replace the tree-walking interpreter.
-    A current challenge is testing of the compiler and virtual machine toolchain. Therefore, I am experimenting with semantic-based fuzzing of the language.
+            Right now, I am writing a virtual machine and a compiler to replace the tree-walking interpreter.
+            A current challenge is testing of the compiler and virtual machine toolchain. Therefore, I am experimenting with semantic-based fuzzing of the language.
+        </li>
+        <li>
+            For the class <q>Distributed Systems</q> at HPI, my team and I are wrapping up our semester-long project called
+            <q>
+            <a href="https://github.com/reef-runtime/reef">
+                Reef
+            </a>
+            </q>.
+        </li>
+        <li>
+            For a <q>IBM System/Z</q> course at HPI, I am writing a report which is based on
+            <q>
+            <a href="https://github.com/rush-rs/rush">
+                the rush programming language
+            </a>
+            </q>.
+        </li>
+    </ul>
 
     <div class="spacer" />
 
@@ -116,8 +153,7 @@
             <div class="projects__project__split">
                 <div class="projects__project__split__left">
                     A voluntary 12th grade research project dealing with the design and
-                    implementation of compiled programming languages. Our final grade was 15 / 15
-                    points.
+                    implementation of compiled programming languages. Right now, I am writing a follow-up report, which is based on rush, for an university course.
 
                     <h4>Components</h4>
 
@@ -232,12 +268,14 @@
 
                 <div class="projects__project__skills">
                     <span>Go</span>
-                    <span>Concurrency</span>
                     <span>DSL Creation</span>
                     <span>Grammars</span>
                     <span>Lexing & Parsing</span>
                     <span>Semantic Analysis</span>
                     <span>Type Systems</span>
+                    <span>Compilers & Code Generation</span>
+                    <span>Virtual Machines</span>
+                    <span>Websockets</span>
                     <span>Git</span>
                 </div>
             </div>
@@ -272,6 +310,7 @@
                     <span>Svelte</span>
                     <span>MP3 Streaming</span>
                     <span>Concurrency</span>
+                    <span>Rust Multithreading</span>
                     <span>Git</span>
                 </div>
             </div>
@@ -292,7 +331,7 @@
                         <ul>
                             <li>Support for multiple users</li>
                             <li>Access-control for each document</li>
-                            <li>Support for automatic synchronizatio</li>
+                            <li>Support for automatic synchronization</li>
                         </ul>
                     </div>
 
@@ -305,6 +344,7 @@
                     <span>Go</span>
                     <span>Typescript</span>
                     <span>CSS</span>
+                    <span>PostCSS</span>
                     <span>HTML</span>
                     <span>Docker</span>
                     <span>Git</span>
@@ -347,6 +387,20 @@
         margin: 2rem 0;
     }
 
+    .hsplit {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #education {
+        img {
+            height: 4.5em;
+        }
+
+        display: flex;
+        gap: 1.25rem;
+    }
+
     .about-container {
         height: 100%;
         width: 100%;
@@ -375,7 +429,6 @@
 
             &__img {
                 max-width: 10rem;
-                height: max-content;
                 aspect-ratio: 1/1;
                 border-radius: 50%;
 
