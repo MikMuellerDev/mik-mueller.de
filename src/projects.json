@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": "rush",
+      "title": "The \"rush\" Programming Language",
+      "description": "A voluntary 12th grade research project dealing with the design and implementation of compiled programming languages. Right now, I am writing a follow-up report, which is based on rush, for an university course.",
+      "bullets": [
+        "Lexer & Parser",
+        "Semantic Analyzer",
+        "Tree-walking interpreter",
+        "Virtual machine interpreter",
+        "WebAssembly Compiler",
+        "LLVM Compiler",
+        "RISC-V Assembly Compiler",
+        "x86_64 Assembly Compiler"
+      ],
+      "tags": [
+        "Rust",
+        "RISC-V",
+        "Assembly",
+        "LLVM",
+        "C",
+        "Python",
+        "Bash",
+        "Svelte",
+        "WebAssembly",
+        "Docker",
+        "LaTeX",
+        "Git",
+        "Compiler Construction",
+        "Presentation Skills",
+        "Public Speaking"
+      ],
+      "image": "./abc"
+    }
+  ]
+}

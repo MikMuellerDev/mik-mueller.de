@@ -147,6 +147,52 @@
 
     <div class="projects">
         <div class="projects__project">
+            <a href="https://github.com/reef-runtime/reef">
+            <h3><q>Reef</q> Webassembly Runtime</h3>
+            </a>
+            <div class="projects__project__split">
+                <div class="projects__project__split__left">
+                    A fault-tolerant, distributed Webassembly runtime that allows user code submissions.
+                    Code is not executed on a certain server, but on a cluster consisting of multiple so-called <em>nodes</em>.
+                    Nodes can join and leave at any given moment without causing the system to fail.
+                    Instead, existing jobs will be migrated to other nodes if one drops off the network.
+
+                    <h4>Features</h4>
+
+                    <ul>
+                        <li>C & Rust Code Submissions</li>
+                        <li>Webinterface</li>
+                        <li>Fault-tolerant</li>
+                        <li>State Syncing</li>
+                        <li>Checkpointed Execution</li>
+                        <li>Sandboxed Execution</li>
+                    </ul>
+                </div>
+
+                <div class="projects__project__split__right">
+                    <img src="/images/reef.webp" alt="" />
+                </div>
+            </div>
+
+            <div class="projects__project__skills">
+                <span>Rust</span>
+                <span>Webassembly</span>
+                <span>Wasm Interpreter</span>
+                <span>Forking Open Source</span>
+                <span>Go</span>
+                <span>ReactJS</span>
+                <span>NextJS</span>
+                <span>Cap'n Proto</span>
+                <span>RPC</span>
+                <span>Git</span>
+                <span>Team Work</span>
+                <span>Presentation Skills</span>
+                <span>Public Speaking</span>
+            </div>
+
+            <div class="spacer" />
+
+        <div class="projects__project">
             <a href="https://rush-lang.de">
             <h3>The <q>rush</q> Programming Language</h3>
             </a>
