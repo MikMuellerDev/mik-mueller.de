@@ -192,14 +192,14 @@
 
             <div class="spacer" />
 
-        <div class="projects__project">
+        <div class="projects__project" id="rush">
             <a href="https://rush-lang.de">
             <h3>The <q>rush</q> Programming Language</h3>
             </a>
             <div class="projects__project__split">
                 <div class="projects__project__split__left">
                     A voluntary 12th grade research project dealing with the design and
-                    implementation of compiled programming languages. Right now, I am writing a follow-up report, which is based on rush, for an university course.
+                    implementation of compiled programming languages.
 
                     <h4>Components</h4>
 
@@ -212,11 +212,15 @@
                         <li>LLVM Compiler</li>
                         <li>RISC-V Assembly Compiler</li>
                         <li>x86_64 Assembly Compiler</li>
+                        <li>
+                            <a href="#s390x">S/390X Assembly Compiler</a>
+                        </li>
                     </ul>
                 </div>
 
-                <div class="projects__project__split__right">
-                    <img src="/images/rush.webp" alt="" />
+                <div class="projects__project__split__right flex-h" style="width: 100%;">
+                    <img src="/images/rush_1.webp" alt="" style="width: 50%; height: auto; object-fit: contain;" />
+                    <img src="/images/rush_0.webp" alt="" style="width: 50%; object-fit: contain;" />
                 </div>
             </div>
 
@@ -236,6 +240,50 @@
                 <span>Presentation Skills</span>
                 <span>Public Speaking</span>
             </div>
+        </div>
+
+            <div class="spacer" />
+
+        <div class="projects__project" id="s390x">
+            <a href="https://github.com/rush-rs/rush/tree/s390x/crates/rush-compiler-s390x">
+            <h3>The S390/X Compiler Backend For the <q>rush</q> Programming Language</h3>
+            </a>
+            <div class="projects__project__split">
+                <div class="projects__project__split__left">
+                    In March 2024, multiple employees from IBM's research and development Facility in Böblingen visited HPI for a week.
+                    During that time, I had the opportunity to gain insights into IBM's System/Z mainframes and their S/390X-based CPU architecture.
+                    Furthermore, I authored a technical report which describes the S/390X architecture and the process of porting a compiler backend to it.
+
+                    For this, I developed a new compiler backend targeting the S/390X architecture for the <a href="#rush">rush</a> programming language.
+                    Furthermore, I managed to chat with <a href="https://www.linkedin.com/in/ulrich-weigand-826a98b/">Ulrich Weigand</a>, a compiler developer for IBM, who provided me with invaluable knowledge.
+
+                    <h4>Learnings</h4>
+
+                    <ul>
+                        <li>Mainframes (System/Z)</li>
+                        <li>System/Z TSO</li>
+                        <li>System/Z JCL</li>
+                        <li>Linux One on IBM Z</li>
+                        <li>System/Z CPU Architecture</li>
+                        <li>S/390X Assembler Language (GAS)</li>
+                    </ul>
+                </div>
+
+                <div class="projects__project__split__right flex-h" style="width: 100%;">
+                    <img src="/images/ibm.webp" alt="" style="width: 50%; object-fit: contain;" />
+                    <img src="/images/ibm_paper.png" alt="" style="width: 50%; height: auto; object-fit: contain;" />
+                </div>
+            </div>
+
+            <div class="projects__project__skills">
+                <span>IBM System/Z</span>
+                <span>Mainframes</span>
+                <span>S/390X</span>
+                <span>Compilers</span>
+                <span>Assembly</span>
+                <span>Debugging (GDB)</span>
+            </div>
+        </div>
 
             <div class="spacer" />
 
@@ -416,6 +464,11 @@
         @include widescreen {
             padding: 5% 15%;
         }
+    }
+
+    .flex-h {
+        display: flex;
+        gap: 1rem;
     }
 
     a {
