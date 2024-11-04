@@ -133,14 +133,6 @@
             </a>
             </q>.
         </li>
-        <li>
-            For a <q>IBM System/Z</q> course at HPI, I am writing a report which is based on
-            <q>
-            <a href="https://github.com/rush-rs/rush">
-                the rush programming language
-            </a>
-            </q>.
-        </li>
     </ul>
 
     <div class="spacer" />
@@ -245,7 +237,7 @@
             <div class="spacer" />
 
         <div class="projects__project" id="s390x">
-            <a href="https://github.com/rush-rs/rush/tree/s390x/crates/rush-compiler-s390x">
+            <a href="https://s390x.mik-mueller.de">
             <h3>The S390/X Compiler Backend For the <q>rush</q> Programming Language</h3>
             </a>
             <div class="projects__project__split">
